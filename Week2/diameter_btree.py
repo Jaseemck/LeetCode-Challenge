@@ -16,3 +16,12 @@ class Solution(object):
         depth(root)
         return self.ans - 1
         
+root = TreeNode(1) 
+root.left = TreeNode(2) 
+root.right = TreeNode(3) 
+root.left.left = TreeNode(4) 
+root.left.right = TreeNode(5)
+
+ans = Solution()
+res = ans.diameterOfBinaryTree(root)
+print(res) 
